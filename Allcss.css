@@ -1,0 +1,403 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+a:link,a:visited{
+	color:aqua;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #F00D11;
+}
+
+#videobox{
+	width:100%;
+	height: 1000px;
+	overflow: hidden;
+	position: relative;
+	
+}
+#videobox video{
+	width: 100%;
+}
+
+#header{
+	width: 100%;
+	height: 50px;
+	background-color: #3F3F3F;
+	position:fixed;
+-webkit-animation:header 2s;
+-webkit-animation-iteration-count:1;
+	
+}
+@keyframes header
+{
+from {top:-50px;}
+to {top:0px;}
+	
+}
+
+#videobox #header #left{
+	margin-left: 50px;
+	background-repeat: no-repeat;
+	
+}
+#videobox #header #right{
+	float: right;
+	margin-right: 200px;
+	
+	
+}
+
+
+#sousuo{
+	width: 100%;
+	height: 130px;
+	margin-top: 80px;
+	background-image: url(../images/logo1.jpg);
+	background-repeat: no-repeat;
+	background-size: 300px 130px;
+	margin-left: 800px;
+	padding-left: 500px;
+	padding-top: 50px;
+
+}
+
+#sousuo input{
+	width: 200px;
+	
+}
+#sousuo a{
+	background-image: url(../images/sousuokuang.png);
+	background-repeat: no-repeat;
+	margin-left: 230px;
+	margin-top: -35px;
+	padding-top: 50px;
+	
+	display: block;
+	background-size: 50px;
+	
+}
+
+
+#lunbo{
+
+	width: 1500px;
+	height: 500px;
+	background-image: url(../images/duanma.png);
+	background-repeat: no-repeat;
+	background-size: 1000px 500px;
+	margin-left: 600px;
+	cursor: pointer;
+	
+}
+#lunbo li{
+	width: 40px;
+	height: 20px;
+	color: aqua;
+}
+#click1{
+	width: 20px;
+	height: 20px;
+}
+
+
+/*
+#lunbo li:hover{
+	width: 20px;
+	height: 20px;
+	background-color: aqua;
+}
+
+*/
+
+
+
+#click1:hover{
+/*	margin-top: 10px;*/
+	position: fixed;
+	width: 1500px;
+	height: 500px;
+	margin-left: -40px;
+	background-image:url(../images/chenshan.png);
+	background-size: 1500px 500px;
+	background-repeat: no-repeat;
+
+	
+
+}
+#click2:hover{
+/*	margin-top: 10px;*/
+	position: fixed;
+	width: 1500px;
+	height: 500px;
+	margin-left: -40px;
+	margin-top: -20px;
+	
+	background-image:url(../images/bg2.jpg);
+	background-size: 1500px 500px;
+	background-repeat: no-repeat;
+
+}
+#click3:hover{
+	position: fixed;
+	width: 1500px;
+	height: 500px;
+	margin-left: -40px;
+	margin-top: -40px;
+	background-image:url(../images/meishi.png);
+	background-size: 1500px 500px;
+	background-repeat: no-repeat;
+	
+
+}
+#click4:hover{
+	position: fixed;
+	width: 1500px;
+	height: 500px;
+	margin-left: -40px;
+	margin-top: -60px;
+	background-image:url(../images/lunbo1.png);
+	background-size: 1500px 500px;
+	background-repeat: no-repeat;
+}
+
+
+
+#snew1
+{
+width:827px;
+height:300px;
+
+background-image:url(../images/bg1.jpg);
+background-size: 827px 300px;
+
+background-repeat: no-repeat;
+position:relative;
+
+-webkit-animation:move1 30s;
+-webkit-animation-iteration-count:infinite;
+
+}
+
+@keyframes move1
+{
+from {left:0px;}
+to {left:3000px;}
+	
+	10%{left: 1500px;}
+	15%{left: 1500px;}
+	20%{left: 1500px;}
+	25%{left: 1500px;}
+	50%{left: 0px;}
+	55%{left: 0px;}
+
+	
+}
+
+#snew2
+{
+width:827px;
+height:300px;
+margin-top: -300px;
+background-image:url(../images/bg2.jpg);
+background-size: 827px 300px;
+
+background-repeat: no-repeat;
+position:absolute;
+-webkit-animation:move2 30s;
+-webkit-animation-iteration-count:infinite;
+}
+@keyframes move2
+{
+from {left:-3000px;}
+to {left:3000px;}
+	35%{left: 1500px;}
+	50%{left: 1500px;}
+	65%{left: 0px;}
+	}
+#snew3
+{
+width:827px;
+height:300px;
+	margin-top: -300px;
+background-image:url(../images/bg3.jpg);
+	
+background-size: 827px 300px;
+background-repeat: no-repeat;
+position:absolute;
+-webkit-animation:move3 30s;
+-webkit-animation-iteration-count:infinite;
+}
+@keyframes move3
+{
+from {left:-3000px;}
+to {left:3000px;}
+	55%{left: 1500px;}
+	65%{left: 1500px;}
+	80%{left: 0px;}
+	}
+	
+#snew4
+{
+width:827px;
+height:300px;
+	margin-top: -300px;
+background-image:url(../images/chenshan.png);
+	
+background-size: 827px 300px;
+background-repeat: no-repeat;
+position:absolute;
+-webkit-animation:move4 30s;
+-webkit-animation-iteration-count:infinite;
+}
+@keyframes move4
+{
+from {left:-3000px;}
+to {left:3000px;}
+	75%{left: 1500px;}
+	85%{left: 1500px;}
+	100%{left: 3000px;}
+	}
+
+
+nav{
+	
+	margin-top: -50px;
+	margin-left: 100px;
+	width: 200px;
+	height: 650px;
+	border: solid #D30E12;
+	background-image:url(../images/navbg.jpg);
+	font-size: 20px;
+	background-repeat: no-repeat;
+	background-size: 200px 500px;
+	position:fixed;
+	left: 20px;
+	top: 200px;
+	-webkit-animation:nav 2s;
+-webkit-animation-iteration-count:1;
+}
+@keyframes nav
+{
+from {top:500px;}
+to {top:200px;}
+	
+}
+
+#nav1{
+/*	热销*/
+	margin-top: 120px;
+	margin-left: -25px;
+	background-image: url(../images/rexiao.png);
+	padding-left: 50px;
+	background-repeat: no-repeat;
+}
+#nav2{
+/*	居家*/
+	margin-left: -25px;
+	background-image:url(../images/jujia.png);
+	padding-left: 50px;
+	background-repeat: no-repeat;
+}
+#nav3{
+/*	鞋包服饰电器洗护饮食婴童特色*/
+	margin-left: -25px;
+	background-image:url(../images/xiebao.png);
+	padding-left: 50px;
+	background-repeat: no-repeat;
+}
+#nav4{
+/*	服饰*/
+	margin-left: -25px;
+	background-image:url(../images/fushi.png);
+	padding-left: 50px;
+	background-repeat: no-repeat;
+}
+#nav5{
+/*	电器*/
+	margin-left: -25px;
+	background-image:url(../images/dianqi.png);
+	padding-left: 50px;
+	background-repeat: no-repeat;
+}
+#nav6{
+/*	洗护*/
+	margin-left: -25px;
+	background-image:url(../images/xihu.png);
+	padding-left: 50px;
+	background-repeat: no-repeat;
+}
+#nav7{
+/*	饮食*/
+	margin-left: -25px;
+	background-image:url(../images/yinshi.png);
+	padding-left: 50px;
+	background-repeat: no-repeat;
+}
+#nav8{
+/*	婴童*/
+	margin-left: -25px;
+	background-image:url(../images/yingtong.png);
+	padding-left: 50px;
+	background-repeat: no-repeat;
+}
+#nav9{
+/*	特色*/
+	margin-left: -25px;
+	background-image:url(../images/tese.png);
+	padding-left: 50px;
+	background-repeat: no-repeat;
+}
+
+
+
+#rexiaobang,#jujia,#xiebao,#fushi,#dianqi,#xihu,#yinshi,#yingtong,#tese{
+	
+	color: aquamarine;
+	margin-left: 350px;
+
+}
+
+
+p span{
+	width: 75px;
+	display: inline-block;
+	text-align: right;
+	padding-right: 10px;
+}
+
+footer{
+	width: 100%;
+	height: 600px;
+	background-color: antiquewhite;
+}
+#denglu{
+	width: 300px;
+	height: 120px;
+	margin-left: 800px;
+	
+}
+#zhuce{
+	width: 300px;
+	height: 280px;
+	margin-left: 800px;
+	
+	
+}
+
+
+#banquan img{
+	width: 100%;
+	height: 200px;
+	
+}
+
+
